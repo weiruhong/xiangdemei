@@ -1,0 +1,480 @@
+@import "init.css";
+HTML {
+    scrollbar-base-color: #e59f15;
+    scrollbar-base-color: #e59f15;
+    scrollbar-3dlight-color:#e59f15;
+    scrollbar-highlight-color:#e59f15;
+    scrollbar-track-color: #e59f15;
+    scrollbar-arrow-color: #e59f15;
+    scrollbar-shadow-color: #e59f15;
+    scrollbar-dark-shadow-color:#e59f15;
+}
+/*将项-开始*/
+#jx-center,#jx-left-switch>a{
+    color:#f2a701;
+}
+#jx-left-btn>span{
+    border-top:8px solid #f2a701;
+}
+.active #jx-left-btn>span{
+    border-top:8px solid #fff;
+}
+#jx-left-switch>a{
+    color:#f2a701;
+}
+.active #jx-left-switch>a,.active #zl-left-switch>a{
+    color:#fff;
+}
+#jx-center{
+    position:relative;
+}
+#jx-icon-con>a>li{
+    color:#f2a701;
+    width:100%;
+    height:30px;
+    margin-bottom:10px;
+}
+.active #jx-icon-con>a>li,.active #zl-icon-con>a>li{
+    color:#fff;
+}
+#jx-jia{
+    color:#f2a701;
+}
+.active #jx-jia,.active #zl-jia{
+    color:#fff;
+}
+.jx-header{
+    color:#f2a701;
+    font-size:60px;
+    margin-top:-20px;
+}
+.jx-con{
+    width:100%;
+    height:auto;
+    margin-top:80px;
+}
+.jx-con div{
+    height:auto;
+    margin-bottom:90px;
+}
+.jx-con div a p{
+    font-size:90px;
+    color:#f2a701;
+    font-family: FE3, sans-serif;
+}
+.jx-con div a  span{
+    font-size:45px;
+    color:#f2a701;
+    display: block;
+    font-family: FE5, sans-serif;
+}
+/*将项-结束*/
+/*展览-开始*/
+/*.zl-content{
+    background: #e59f15;
+}*/
+#zl-left-btn>span{
+    border-top:8px solid #642077;
+}
+.active #zl-left-btn>span{
+    border-top:8px solid #fff;
+}
+#zl-left-switch>a{
+    color:#642077;
+}
+#zl-icon-con>a>li{
+    color:#642077;
+}
+#zl-jia{
+    color:#642077;
+}
+/*展览1-开始*/
+
+.zl-list{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    margin-top:-15px;
+}
+.zl-list>li.zl-list-hot{
+    color:#642077;
+    opacity: 1;
+}
+.zl-list>li{
+    font-size:60px;
+    float: left;
+    margin-right:30px;
+    color:#642077;
+    opacity: 0.7;
+    font-family: FE3, sans-serif;
+}
+.zl-zhong-con{
+    width:100%;
+    height:800px;
+    color:#642077;
+    margin-top:100px;
+}
+.zl-zhong-con>li{
+    width:100%;
+    height:100%;
+}
+.zl-zhong-con>li.zl-hot{
+    display: block;
+}
+.zl-zhong-con>li{
+    display: none;
+}
+.zl-zhong-con li ul{
+    width:100%;
+    height:80px;
+    color:#642077;
+    opacity: 0.7;
+    margin-bottom:70px;
+}
+.zl-zhong-con li ul:hover{
+    color:#642077;
+    opacity: 1;
+}
+.zl-zhong-con li ul li:nth-child(1){
+    width:180px;
+    height:80px;
+    float: left;
+}
+.zl-zhong-con li ul li a{
+    color:#642077;
+}
+.zl-zhong-con li ul li span {
+    font-size:30px;
+    display: block;
+    font-family: FE5, sans-serif;
+}
+.zl-zhong-con li ul li:nth-child(2){
+    height:80px;
+    font-size:60px;
+    float: left;
+    margin-top:-5px;
+    font-family: FE3, sans-serif;
+}
+/*展览1-结束*/
+/*展览3*/
+.zl-zhong{
+    height: 100%;
+    margin-left: 110px;
+}
+.zl-con{
+    width:72%;
+    float: left;
+    font-size:45px;
+    color:#642077;
+}
+.zl-con a{
+    display: block;
+    color:#642077;
+    font-size:60px;
+    margin-top:-20px;
+    margin-bottom:95px;
+    font-family: FE3, sans-serif;
+}
+.jx-content,.jx-content a{
+    color:#e8a215;
+}
+.zl-con p{
+    font-size:39px;
+}
+.zlxx{
+    border-bottom:5px solid #642077;
+}
+.zldd{
+    margin-top:40px;
+}
+.zl-right{
+    float: right;
+    width:420px;
+    color:#642077;
+}
+/*展览右侧*/
+.zlsj,.zldd,.zlgg{
+    margin-top:170px;
+    font-size:28px;
+}
+.zlgg{
+    margin-top:0;
+}
+.zldd{
+    margin:60px 0;
+}
+.zlsj>p,.zldd>p,.zlgg>p{
+    font-family: FE1, sans-serif;
+}
+.zlsj>span,.zldd>span,.zlgg>span{
+    font-family: FE5, sans-serif;
+}
+.zlgg>a>span{
+    color:#642077;
+    font-family: FE5, sans-serif;
+}
+/*展览右侧*/
+/*展览3*/
+/*展览-结束*/
+@media screen and (max-width: 1366px){
+    /*奖项-开始*/
+    #jx-left-btn>span{
+        border-top:5px solid #f2a701;
+    }
+    .active #jx-left-btn>span{
+        border-top:5px solid #fff;
+    }
+    .jx-header{
+        font-size:36px;
+        margin-top:-10px;
+    }
+    .jx-con{
+        margin-top:50px;
+        line-height: 1.65;
+    }
+    .jx-con div{
+        height:auto;
+        margin-bottom:54px;
+    }
+    .jx-con div a p{
+        font-size:54px;
+    }
+    .jx-con div a  span{
+        font-size:27px;
+    }
+    /*将项-结束*/
+
+    /*展览-开始*/
+    /*展览1-开始*/
+    .zl-list{
+        margin-top:-15px;
+    }
+    .zl-list>li{
+        font-size:50px;
+        float: left;
+        margin-right:30px;
+    }
+    .zl-zhong-con{
+        width:100%;
+        height:570px;
+        margin-top:55px;
+    }
+    .zl-zhong-con>li{
+        width:100%;
+        height:100%;
+    }
+    .zl-zhong-con li ul{
+        width:100%;
+        margin-bottom:70px;
+    }
+    .zl-zhong-con li ul li:nth-child(1){
+        width:180px;
+        height:80px;
+        float: left;
+    }
+    .zl-zhong-con li ul li span {
+        font-size:20px;
+        display: block;
+    }
+    .zl-zhong-con li ul li:nth-child(2){
+        width: auto;
+        height:80px;
+        font-size:54px;
+        margin-top:-10px;
+    }
+    /*展览1-结束*/
+
+    /*展览3*/
+    .zl-con{
+        width: 72%;
+        float: left;
+    }
+    .zl-con>a{
+        font-size:36px;
+        margin-top: -10px;
+        margin-bottom:65px;
+    }
+    .zl-con p{
+        font-size:27px;
+        line-height:1.725;
+        font-family: FE1,sans-serif;
+    }
+    #zl-left-btn>span{
+        border-width:5px;
+    }
+    .active #zl-left-btn>span{
+        border-width:5px;
+    }
+    .active .btn-bottom{
+        margin:-5px auto 0;
+    }
+    .zl-zhong{
+        height: 100%;
+        margin-left: 75px;
+    }
+    /*展览右侧*/
+    .zl-right{
+        width:270px;
+        float: right;
+        color:#642077;
+    }
+    .zl-right a{
+         float: right;
+         color:#642077;
+     }
+    .jx-right,.jx-right a{
+        color:#e8a215;
+    }
+    .zlsj,.zldd,.zlgg{
+        margin-top:115px;
+        font-size:20px;
+    }
+    .zldd{
+        margin:40px 0;
+    }
+    .zlgg{
+        margin-top:0;
+    }
+    /*展览右侧*/
+
+    /*展览3*/
+    /*展览-结束*/
+}
+@media screen and (max-width: 1024px){
+    .zl-con{
+        width:65%;
+    }
+}
+@media screen and (max-width: 768px){
+    /*奖项-开始*/
+    .jx-header{
+        font-size:0.5rem;
+        margin-top:-5px;
+    }
+    #jx-left-btn>span{
+        border-top:0.08rem solid #f2a701;
+    }
+    .active #jx-left-btn>span{
+        border-top:0.08rem solid #fff;
+    }
+    .jx-con{
+        width:100%;
+        height:auto;
+        margin-top:0.6rem;
+    }
+    .jx-con div{
+        height:auto;
+        margin-bottom:0.9rem;
+    }
+    .jx-con div a p{
+        font-size:0.45rem;
+    }
+    .jx-con div a  span{
+        font-size:0.3rem;
+    }
+    /*奖项-结束*/
+
+    /*展览1-开始*/
+    #zl-left-btn>span{
+        border-width:0.08rem;
+    }
+    .active #zl-left-btn>span{
+        border-width:0.08rem;
+    }
+    .zl-list{
+        margin-top:-0.1rem;
+    }
+    .zl-list>li.zl-list-hot{
+        color:#642077;
+        opacity: 1;
+    }
+    .zl-list>li{
+        font-size:0.5rem;
+        margin-right:0.4rem;
+    }
+    .zl-zhong-con{
+        width:100%;
+        height:570px;
+        line-height: 1.4;
+        margin-top:0.7rem;
+    }
+    .zl-zhong-con>li{
+        width:100%;
+        height:100%;
+    }
+    .zl-zhong-con>li.zl-hot{
+        display: block;
+    }
+    .zl-zhong-con>li{
+        display: none;
+    }
+    .zl-zhong-con li ul{
+        width:100%;
+        height:auto;
+        overflow: hidden;
+        margin-bottom: 1rem;
+    }
+    .zl-zhong-con li ul li:nth-child(1){
+        width:1.1rem;
+        height:100%;
+        float: left;
+    }
+    .zl-zhong-con li ul li span {
+        font-size:0.26rem;
+    }
+    .zl-zhong-con li ul li:nth-child(2){
+        width:70%;
+        height:100%;
+        font-size:0.45rem;
+        margin-top:-4px;
+    }
+    /*展览1-结束*/
+
+    /*展览3*/
+    .zl-zhong {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        margin-right:0;
+        padding-left:1rem;
+    }
+    .left2{
+        height:103%;
+    }
+    .zl-con{
+        width:100%;
+    }
+    .zl-right{
+        width:100%;
+        border-top:2px solid #6a1a7e;
+    }
+    .jx-right{
+        border-top:2px solid #e8a215;
+    }
+    .zl-con a{
+        display: block;
+        font-size:0.45rem;
+        margin-top:-0.1rem;
+        margin-bottom:0.72rem;
+    }
+    .zl-con p{
+        font-size:0.3rem;
+        margin-bottom:0.8rem;
+    }
+    .zlsj{
+        margin-top: 0.8rem;
+    }
+    .zlxx{
+        border-bottom:2px solid #642077;
+    }
+    /*展览右侧*/
+    .zlsj,.zldd,.zlgg{
+        font-size:0.3rem;
+    }
+    .zldd{
+        margin:0.7rem 0;
+    }
+    /*展览右侧*/
+    /*展览3*/
+    /*展览-结束*/
+}

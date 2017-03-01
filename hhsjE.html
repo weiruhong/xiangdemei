@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花花世界</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minmum-scale=1.0,maxmum-scale=1.0,user-scalable=no"/>
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait" />
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/pt.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/scroll.js"></script>
+</head>
+<body>
+<div class="hhsj-box">
+    <div class="hhsj-box-con">
+        <!--左侧-开始-->
+        <div class="con-left">
+            <div class="left-btn" id="hhsj-left-btn">
+                <span class="btn-top"></span>
+                <span class="btn-centre"></span>
+                <span class="btn-bottom"></span>
+            </div>
+            <div class="left-switch" id="hhsj-left-switch">
+                <a href="#">中</a><br/><a href="#">EN</a>
+            </div>
+            <ul class="icon-con" id="hhsj-icon-con">
+                <a href="https://www.facebook.com/%E6%83%B3%E5%BE%97%E7%BE%8E-XIANGDEMEI-1630224173886024/"><li class="icon iconfont icon-facebookf"></li></a>
+
+                <a href="https://www.instagram.com/xiangdemei_china/"><li class="icon iconfont icon-instagram"></li></a>
+
+                <a href="https://www.pinterest.com/xiangdemei/"><li class="iaon iconfont icon-socialpinterestoutline">
+                </li></a>
+
+                <a href="http://i1.piimg.com/564462/d356db0672235a0e.png"><li class="icon iconfont icon-weixin"></li></a>
+
+                <a href="http://www.weibo.com/u/5693230941?refer_flag=1005050010_&is_hot=1"><li  class="icon iconfont icon-weibo"></li></a>
+
+                <a href="https://www.youtube.com/watch?v=NkvwvFR_Nu4"><li class="icon iconfont icon-youtube"></li></a>
+
+                <a href="https://vimeo.com/xiangdemei"><li class="icon iconfont icon-v"></li></a>
+            </ul>
+            <div class="jia" id="hhsj-jia"><div  class="icon iconfont icon-jia" ></div>
+            </div>
+        </div>
+        <!--左侧-结束-->
+        <!--右侧-开始-->
+        <div class="hhsj-right">
+            <!--右侧-上-开始-->
+            <div class="hhsj-right-top">
+                <ul class="hhsj-header">
+                    <li class="hot"><a href="hhsj.html">COLORFUL WORLD </a></li>
+                    <li><a href="pt.html">COLLOGE</a></li>
+                    <li><a href="video.html">VIDEO </a></li>
+                    <li><a href="jilupian.html">DOCUMENTARY</a></li>
+                </ul>
+                <div class="hhsj-img">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                </div>
+                <ul class="drop-con">
+                    <li class="drop-down">
+                        <a href="#">我就喜欢花花世界</a>
+                        <img src="img/down.png" alt="">
+                        <ul class="drop-down-content">
+                            <li>
+                                <a href="#">拼贴装置</a>
+                                <img src="img/zjt.png" alt="">
+                                <ul class="hhsj-drop-down">
+                                    <li><a href="pt.html">150X150mm</a></li>
+                                    <li><a href="#">81X82mm</a></li>
+                                    <li><a href="#">58.5X59.5mm</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="drop-down-content">
+                            <li><a href="video.html">影像装置</a></li>
+                        </ul>
+                        <ul class="drop-down-content">
+                            <li><a href="jilupian.html">纪录片</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--右侧-上-结束-->
+            <!--右侧-下-开始-->
+            <div class="hhsj-right-bottom">
+                <div class="center-con">
+                    <p style="text-align: left">“One flower, One world“ it’s a philosophical implication that embodies the world is boundless, comprehensive and infinite. Our needs from money are strongly connect with our everyday life—the desire, the materials, the history … and so on.
+                    </p>
+                </div>
+            </div>
+            <!--右侧-下-结束-->
+
+        </div>
+        <!--右侧-结束-->
+    </div>
+
+    <div class="zhezhao" id="hhsj-zhezhao">
+        <div class="zhezhao-con">
+            <div class="nav" id="hhsj-nav">
+                <a href="index.html">公司介绍</a>
+                <a href="artist.html">艺术家介绍</a>
+                <a href="xiangmu.html" class="hot">项目</a>
+                <a href="zhanlan.html">展览</a>
+                <a href="jiangxiang.html">奖项</a>
+                <a href="lianxi.html">联系方式</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    /*字体大小*/
+    var windowW = $(window).width();
+    var flag = true;
+    if(windowW>768 || windowW==768){
+        $('.center-con').click(function(){
+            if(flag){
+                $(".center-con").css('font-size','40px')
+            } else {
+                $(".center-con").css('font-size','30px')
+            }
+            flag = !flag;
+        })
+    }else{
+        $('.center-con').click(function(){
+            if(flag){
+                $(".center-con").css('font-size','30px')
+            } else {
+                $(".center-con").css('font-size','20px')
+            }
+            flag = !flag;
+        })
+    }
+</script>
+</html>

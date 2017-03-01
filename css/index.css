@@ -1,0 +1,540 @@
+@import "init.css";
+@import "icon.css";
+HTML {
+    scrollbar-base-color: #6a1a7e;
+    scrollbar-base-color: #6a1a7e;
+    scrollbar-3dlight-color:#6a1a7e;
+    scrollbar-highlight-color: #6a1a7e;
+    scrollbar-track-color: #6a1a7e;
+    scrollbar-arrow-color: #6a1a7e;
+    scrollbar-shadow-color: #6a1a7e;
+    scrollbar-dark-shadow-color: #6a1a7e;
+}
+html,body{
+    background: #6a1a7e;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+.content{
+    padding:55px;
+    width: 100%;
+    height: 100%;
+}
+.con{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+/*左侧按钮-开始*/
+.con-left{
+    width: 55px;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    position:relative;
+    z-index: 999;
+}
+.left-btn>span{
+    border-top:8px solid #f9600a;
+}
+.active .left-btn>span{
+    border-top:8px solid #fff;
+}
+.left-btn{
+    display:inline-block;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+.btn-top{
+    display:block;
+    width:55px;
+    transition:all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+.btn-centre{
+    display:block;
+    width:55px;
+    margin:8px auto 0;
+    transition:all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+.btn-bottom{
+    display:block;
+    width:55px;
+    margin:8px auto 0;
+    transition:all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+.active .left-btn{
+    display:inline-block;
+}
+.active .btn-top{
+    margin:10px auto 0;
+    transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform:rotate(135deg) ;
+}
+.active .btn-centre{
+    display: none;
+}
+.active .btn-bottom{
+    margin:-8px auto 0;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform:rotate(45deg) ;
+}
+.left-switch{
+    width:100%;
+    margin-top:120px;
+    font-size:40px;
+    text-align: center;
+    position:absolute;
+    top:37px;
+    left:0;
+    font-family:FE1,sans-serif;
+}
+.left-switch>a:first-child{
+    font-size: 45px;
+}
+.left-switch>a{
+    text-decoration: none;
+    color:#f9600a;
+    opacity: 0.75;
+    line-height: 1.725;
+}
+.left-switch>a:hover{
+    color:#f9600a;
+    opacity: 1;
+}
+.active .left-switch>a{
+    color:#fff;
+}
+.icon-con{
+    width:100%;
+    display: none;
+    text-align: center;
+    position:absolute;
+    bottom:40px;
+}
+.icon-con>a>li{
+    color:#f9600a;
+    width:100%;
+    margin-bottom:34px;
+}
+.active .icon-con>a>li{
+    color:#fff;
+}
+.jia{
+    width:100%;
+    height:auto;
+    position:absolute;
+    bottom:0;
+    color:#f9600a;
+    text-align: center;
+    transition: all .5s;
+}
+.jia>div{
+    font-size:45px;
+}
+.active .jia{
+    color:#fff;
+}
+.revolve{
+    transform: rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform:rotate(45deg) ;
+}
+/*左侧按钮-结束*/
+
+/*中间部分-开始*/
+.zhong{
+    height: 100%;
+    margin-left: 110px;
+    margin-right:510px;
+}
+.left1{
+    display: none;
+}
+.left1>a>img{
+    width:100%;
+}
+.left2{
+    width:100%;
+    height: 105%;
+    font-size:120px;
+    text-align: justify;
+    overflow: hidden;
+    text-justify:inter-ideograph;
+    font-family:FE1,sans-serif;
+    color:#f9600a;
+}
+#left2 p{
+    cursor: pointer;
+    margin-top:-50px;
+    line-height:1.725;
+    transition: all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+/*中间部分-结束*/
+
+/*右侧-开始*/
+.right{
+    height: 100%;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.right>a>img {
+    height:100%;
+}
+
+.center-con {
+    width: 100%;
+    height:100%;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width:0;
+}
+/*右侧-结束*/
+
+
+/*遮罩-开始*/
+.zhezhao{
+    width:100%;
+    height:100%;
+    padding:55px;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#e65413;
+    display: none;
+    z-index: 9;
+}
+.zhezhao-con{
+    width:90%;
+    height:100%;
+     margin-left:110px;
+}
+.nav{
+    width:100%;
+    height:100%;
+    display: none;
+}
+.nav>a.hot{
+    color:#fff;
+    opacity: 1;
+}
+.nav>a:first-child{
+    margin-top:-35px;
+}
+.nav>a {
+    display: block;
+    color: #fff;
+    opacity: 0.5;
+    font-size: 90px;
+    line-height: 1.725;
+    font-family: FE1, sans-serif;
+}
+/*艺术家-开始*/
+#art-content{
+    background: url(../img/art-bg.png) no-repeat top;
+    background-size: cover;
+}
+#art-left-btn>span{
+    border-top:8px solid #e59f15;
+}
+.active #art-left-btn>span{
+    border-top:8px solid #fff;
+}
+#art-left-switch>a,#art-icon-con>a>li,#art-jia{
+    color:#e59f15;
+}
+.active #art-left-switch>a,.active #art-icon-con>a>li,.active #art-jia{
+    color:#fff;
+}
+.art-center-box-top{
+    width:100%;
+    height:auto;
+    cursor: pointer;
+    margin-top:-55px;
+    line-height:1.725;
+    color:#e59f15;
+    transition: all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+/*艺术家-结束*/
+/*遮罩-结束*/
+@media screen and (max-width: 1366px) {
+    .content{
+        padding:40px;
+    }
+    /*左侧-开始*/
+    .con-left{
+        width:35px;
+    }
+    .left-btn>span{
+        border-top:5px solid #f9600a;
+    }
+    .active .left-btn>span{
+        border-top:5px solid #fff;
+    }
+    .active .btn-top{
+        margin:10px auto 0;
+    }
+    .active .btn-bottom{
+        margin:-5px auto 0;
+    }
+    .left-btn>span{
+        width:35px;
+    }
+    .left-switch{
+        margin-top:70px;
+        font-size:25px;
+    }
+    .left-switch>a:first-child{
+        font-size:30px;
+    }
+    .icon-con>a>li{
+        margin-bottom:15px;
+    }
+    .jia>div{
+        font-size:38px;
+    }
+    /*左侧-结束*/
+
+    /*中间-开始*/
+    .zhong{
+        height: 100%;
+        margin-left: 75px;
+        margin-right:360px;
+    }
+    .left2{
+        width: 100%;
+        height: 108%;
+        font-size:60px;
+    }
+    #left2 p{
+        line-height:2;
+        margin-top:-30px;
+    }
+    /*中间-结束*/
+
+    /*右侧-开始*/
+    .right{
+        height: 100%;
+        position:absolute;
+        top:0;
+        right:0;
+    }
+    .right>a>img{
+        height:100%;
+        float: right;
+    }
+    /*右侧-结束*/
+    /*遮罩-开始*/
+    .zhezhao{
+        padding:40px;
+    }
+    .zhezhao-con{
+        width:90%;
+        height:100%;
+        margin-left:75px;
+    }
+    .nav{
+        width:100%;
+        height:100%;
+    }
+    .nav>a:first-child{
+        margin-top:-20px;
+    }
+    .nav>a{
+        font-size:64px;
+        line-height:1.6;
+    }
+    /*遮罩-结束*/
+    /*艺术家开始*/
+    .art-center-box-top{
+        width:100%;
+        height:auto;
+        margin-top:-30px;
+        color:#e59f15;
+        line-height: 2;
+    }
+    #art-left-btn>span{
+        border-top:5px solid #e59f15;
+    }
+    .active #art-left-btn>span{
+        border-top:5px solid #fff;
+    }
+    /*艺术家结束*/
+}
+@media screen and (max-width: 1280px) {
+    .zhong{
+        height: 100%;
+        margin-left: 66px;
+        margin-right:433px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .zhong{
+        height: 100%;
+        margin-left: 66px;
+        margin-right:363px;
+    }
+}
+@media screen and (max-width: 768px){
+    .content{
+        padding:0.33rem;
+        width: 100%;
+        height: 100%;
+    }
+    .con{
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+    /*左侧-开始*/
+    .left-switch {
+        margin-top: 0.5rem;
+        font-size:0.4rem;
+    }
+    .left-switch>a:first-child{
+        font-size:0.45rem;
+    }
+    .con-left{
+        width: 0.7rem;
+        height: 100%;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    .left-btn>span{
+        border-top:0.08rem solid #f9600a;
+    }
+    .active .left-btn>span,.active #art-left-btn>span{
+        border-top:0.08rem solid #fff;
+    }
+    #art-left-btn>span{
+         border-top:0.08rem solid #e59f15;
+     }
+    .active .btn-top{
+        margin:0.2rem auto 0;
+    }
+    .active .btn-bottom{
+        margin:-0.07rem auto 0;
+    }
+    .left-btn{
+        display:inline-block;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index: 999;
+    }
+    .btn-centre{
+        margin:0.13rem auto 0;
+    }
+    .btn-bottom{
+        margin:0.13rem auto 0;
+    }
+    .left-btn >span{
+        width: 0.7rem;
+    }
+    .icon-con {
+        bottom: 30px;
+    }
+    .icon-con>a>li{
+        font-size:0.4rem;
+        margin-bottom:0.3rem;
+    }
+    .jia>div{
+        font-size:0.5rem;
+    }
+    /*左侧-结束*/
+
+    /*中间-开始*/
+    .zhong{
+        height: 100%;
+        margin:0;
+        padding-left:1rem;
+    }
+    .left1{
+        display: block;
+    }
+    .left1>img{
+        width:100%;
+    }
+    .left2{
+        width: 100%;
+        height:77%;
+        font-size:0.7rem;
+        letter-spacing: -1px;
+        font-family:FE1,sans-serif;
+    }
+    #left2{
+        width: 100%;
+        height:105%;
+        position:relative;
+    }
+    #left2 p{
+        margin-top:-0.32rem;
+        line-height: 1.9;
+    }
+    /*中间-结束*/
+    .right{
+        display: none;
+    }
+    /*遮罩-开始*/
+    .zhezhao{
+        padding:0.33rem;
+    }
+    .zhezhao-con{
+        width:80%;
+        height:100%;
+        margin-left:1rem;
+    }
+    .nav{
+        width:100%;
+        height:100%;
+    }
+    .nav>a:first-child{
+        margin-top:-0.4rem;
+    }
+    .nav>a{
+        font-size:0.8rem;
+        line-height:2;
+    }
+    /*遮罩-结束*/
+    /*art-开始*/
+    #art-content{
+        background: url(../img/art-bg1.png) no-repeat top;
+        background-size: cover;
+    }
+    .art-center-box-top{
+        margin-top:-0.35rem;
+        line-height: 1.9;
+    }
+    /*art-开始*/
+    #zsimg{
+        position:absolute;
+        top:50px;
+        left:60px;
+        z-index: 999;
+    }
+}

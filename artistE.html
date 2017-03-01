@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>艺术家介绍</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minmum-scale=1.0,maxmum-scale=1.0,user-scalable=no"/>
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait" />
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/scroll.js"></script>
+    <style>
+        HTML {
+            scrollbar-base-color: #831d46;
+            scrollbar-base-color: #831d46;
+            scrollbar-3dlight-color:#831d46;
+            scrollbar-highlight-color: #831d46;
+            scrollbar-track-color: #831d46;
+            scrollbar-arrow-color: #831d46;
+            scrollbar-shadow-color: #831d46;
+            scrollbar-dark-shadow-color: #831d46;
+        }
+    </style>
+</head>
+<body>
+<div class="content" id="art-content">
+    <div class="con">
+        <div class="con-left" id="art-con-left">
+            <div class="left-btn" id="art-left-btn">
+                <span class="btn-top"></span>
+                <span class="btn-centre"></span>
+                <span class="btn-bottom"></span>
+            </div>
+            <div class="left-switch" id="art-left-switch">
+                <a href="#">中</a><br/><a href="#">EN</a>
+            </div>
+            <ul class="icon-con" id="art-icon-con">
+                <a href="https://www.facebook.com/%E6%83%B3%E5%BE%97%E7%BE%8E-XIANGDEMEI-1630224173886024/"><li class="icon iconfont icon-facebookf"></li></a>
+
+                <a href="https://www.instagram.com/xiangdemei_china/"><li class="icon iconfont icon-instagram"></li></a>
+
+                <a href="https://www.pinterest.com/xiangdemei/"><li class="iaon iconfont icon-socialpinterestoutline">
+                </li></a>
+
+                <a href="http://i1.piimg.com/564462/d356db0672235a0e.png"><li class="icon iconfont icon-weixin"></li></a>
+
+                <a href="http://www.weibo.com/u/5693230941?refer_flag=1005050010_&is_hot=1"><li  class="icon iconfont icon-weibo"></li></a>
+
+                <a href="https://www.youtube.com/watch?v=NkvwvFR_Nu4"><li class="icon iconfont icon-youtube"></li></a>
+
+                <a href="https://vimeo.com/xiangdemei"><li class="icon iconfont icon-v"></li></a>
+            </ul>
+            <div class="jia" id="art-jia"><div  class="icon iconfont icon-jia"></div>
+            </div>
+
+        </div>
+        <div class="zhong">
+            <div class="left2" id="left2">
+                <div class="center-con" id="art-center-con">
+                    <div class="art-center-box-top" style="text-align: left">
+                        Hei Yiyang(born in 1975 in Henan Province ) is one of the most active cultural exchange pioneers in China. He is also a talented new artist with free, intriguing, poeticHei Yiyang(born in 1975 in Henan Province ) is one of the most active cultural exchange pioneers in China. He is also a talented new artist with free, intriguing, poetic
+                    </div>
+                </div>
+                <img src="img/jt.png" alt="" id="zsimg">
+            </div>
+        </div>
+        <div class="right"><a href="index.html"><img src="img/art-logo1.png" alt=""></a></div>
+    </div>
+    <div class="zhezhao">
+        <div class="zhezhao-con">
+            <div class="nav">
+                <a href="index.html">XIANGDEMEI</a>
+                <a href="artist.html" class="hot">ARTIST</a>
+                <a href="xiangmu.html">PROJECT</a>
+                <a href="zhanlan.html">EXHIBITION</a>
+                <a href="jiangxiang.html">AWARD</a>
+                <a href="lianxi.html">CONTACT</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    $(function(){
+        var windowW = $(window).width();
+        var flag = true;
+        if(windowW>768 || windowW==768){
+            $('.left2').click(function(){
+                if(flag){
+                    $(".left2").css('font-size','50px')
+                    $(".art-center-box-top").css("margin-top","-25px")
+                } else {
+                    $(".left2").css('font-size','45px')
+                    $(".art-center-box-top").css("margin-top","-22px")
+                }
+                flag = !flag;
+            })
+        }else{
+            $('.left2').click(function(){
+                if(flag){
+                    $(".left2").css('font-size','30px')
+                    $(".art-center-box-top").css("margin-top","-15px")
+                } else {
+                    $(".left2").css('font-size','20px')
+                    $(".art-center-box-top").css("margin-top","-10px")
+                }
+                flag = !flag;
+            })
+        }
+    })
+    function codefans(){
+        var zsimg=document.getElementById("zsimg");
+        zsimg.style.display="none";
+    }
+    setTimeout("codefans()",2000);//2秒，可以改动
+</script>
+</html>

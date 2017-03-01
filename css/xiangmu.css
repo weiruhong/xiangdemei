@@ -1,0 +1,219 @@
+@import "init.css";
+HTML {
+    scrollbar-base-color: #fff;
+    scrollbar-base-color: #fff;
+    scrollbar-3dlight-color:#fff;
+    scrollbar-highlight-color: #fff;
+    scrollbar-track-color: #fff;
+    scrollbar-arrow-color: #fff;
+    scrollbar-shadow-color: #fff;
+    scrollbar-dark-shadow-color:#fff;
+}
+#xm-content{
+    background: #fff;
+}
+#xm-content .zhong{
+    margin-right:0;
+}
+.xm-list{
+    height:auto;
+    overflow: hidden;
+}
+.xm-list:first-child{
+    margin-top:-25px;
+}
+.xm-list>li>a{
+    float: left;
+    color:#8d0947;
+    opacity: 0.5;
+    font-size:90px;
+    height:180px;
+    margin-right: 100px;
+}
+.xm-list>li>a:hover{
+    color:#8d0947;
+    opacity: 1;
+}
+#xm-left-btn>span{
+    border-top:8px solid #8d0947;
+}
+.active #xm-left-btn>span{
+    border-top:8px solid #fff;
+}
+#xm-icon-con>a>li{
+    color:#8d0947;
+}
+#xm-left-switch>a,#xm-jia{
+    color:#8d0947;
+}
+.active #xm-icon-con>a>li{
+    color:#fff;
+}
+.active #xm-left-switch>a,.active #xm-jia{
+    color:#fff;
+}
+/*项目结束*/
+/*联系开始*/
+#lx-content{
+    background: #8d0947;
+}
+.lx-center-top,.lx-center-bottom{
+    margin-top:-15px;
+    font-size: 46px;
+    line-height: 1.725;
+    text-align: left;
+}
+.lx-center-top{
+    margin-bottom:140px;
+}
+.lx-loft{
+    width:55%;
+    display: inline-block;
+}
+.lx-e{
+    width:23%;
+    display: inline-block;
+}
+.lx-t,.lx-f{
+    width:45%;
+    display: inline-block;
+}
+@media screen and (max-width:1366px){
+    /*联系-开始*/
+    .lx-center-top,.lx-center-bottom{
+        margin-top:-8px;
+        font-size: 30px;
+        line-height: 1.725;
+    }
+    .lx-center-top{
+        margin-bottom:150px;
+    }
+    .lx-loft{
+        width:45%;
+        display: inline-block;
+    }
+    .lx-e{
+        width:23%;
+        display: inline-block;
+    }
+    .lx-t,.lx-f{
+        width:38%;
+        display: inline-block;
+    }
+/*    .lx-center-bottom{
+        font-size: 36px;
+    }*/
+    .center-con{
+        font-size:30px;
+    }
+    /*联系-结束*/
+    /*项目-开始*/
+    .xm-list:first-child{
+        margin-top:-20px;
+    }
+    .xm-list>li>a{
+        height:120px;
+        font-size:64px;
+        margin-right: 50px;
+    }
+    #xm-left-btn>span{
+        border-top:5px solid #8d0947;
+    }
+    .active #xm-left-btn>span{
+        border-top:5px solid #fff;
+    }
+    /*项目-结束*/
+}
+@media screen and (max-width:1280px){
+    /*联系-开始*/
+    .lx-center-top,.lx-center-bottom{
+        margin-top:-8px;
+        font-size: 30px;
+        line-height: 1.725;
+    }
+    .lx-center-top{
+        margin-bottom:150px;
+    }
+    .lx-loft{
+        width:100%;
+        display: inline-block;
+    }
+    .lx-t,.lx-f{
+        width:100%;
+        display: inline-block;
+    }
+}
+/*@media screen and (min-width: 768px)and (max-width: 992px) {
+    .lx-center-top{
+        margin-bottom:80px;
+        font-size:30px;
+    }
+    .lx-center-bottom{
+        font-size:30px;
+    }
+    .center-con{
+        font-size:30px;
+    }
+    .xm-list:first-child{
+        margin-top:0;
+    }
+    .xm-list>li>a{
+        font-size:56px;
+        margin-right: 30px;
+        margin-bottom:50px;
+    }
+}*/
+@media screen and (max-width: 1024px){
+    .lx-center-top{
+        margin-top:0;
+        font-size:0.22rem;
+        margin-bottom:0.8rem;
+    }
+    .lx-center-bottom{
+        font-size:0.22rem;
+    }
+}
+@media screen and (max-width: 768px){
+    /*联系-开始*/
+    .lx-center-top{
+        margin-top:0;
+        font-size:0.3rem;
+        margin-bottom:0.8rem;
+    }
+    .lx-center-bottom{
+        font-size:0.3rem;
+        text-align: left;
+    }
+    .lx-t,.lx-f,.lx-e,.lx-loft{
+        width:100%;
+    }
+    /*联系-结束*/
+    #xm-left-btn>span{
+        border-top:0.08rem solid #8d0947;
+    }
+    .active #xm-left-btn>span{
+        border-top:0.08rem solid #fff;
+    }
+    .left2{
+        height:100%;
+    }
+    .xm-list:first-child{
+        margin-top:0;
+    }
+    .xm-list>li>a{
+        height:100%;
+        font-size:0.56rem;
+        margin-bottom:0.4rem;
+        margin-right:0.5rem;
+    }
+    #xm-list-hot>a:first-child{
+        margin-top:-8px;
+    }
+    #xm-list-hot>a{
+        width: 100%;
+    }
+    .center-con{
+        font-size:14px;
+    }
+}
+/*联系结束*/

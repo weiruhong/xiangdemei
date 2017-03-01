@@ -1,0 +1,138 @@
+/*左侧按钮-开始*/
+.con-left{
+    width: 55px;
+    height: 100%;
+    float: left;
+    position:relative;
+    z-index: 999;
+    border:1px solid red;
+}
+.left-btn{
+    display:inline-block;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+.btn-top{
+    display:block;
+    border-top:3px solid #f9600a;
+    transition:all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+.left-btn>span{
+    border-top:3px solid #f9600a;
+}
+.btn-centre{
+    display:block;
+    border-top:3px solid #f9600a;
+    margin:12px auto 0;
+    transition:all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+.btn-bottom{
+    display:block;
+    border-top:3px solid #f9600a;
+    margin:12px auto 0;
+    transition:all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+.active .left-btn{
+    display:inline-block;
+}
+.active .btn-top{
+    margin:10px auto 0;
+    border-top:3px solid #fff;
+    transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform:rotate(135deg) ;
+}
+.active .btn-centre{
+    display: none;
+}
+.active .btn-bottom{
+    margin:-3px auto 0;
+    border-top:3px solid #fff;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform:rotate(45deg) ;
+}
+.left-switch{
+    width:100%;
+    margin-top:90px;
+    font-size:20px;
+    text-align: center;
+    position:absolute;
+    top:37px;
+    left:0;
+    font-family:FE1,sans-serif;
+}
+.left-switch>a{
+    text-decoration: none;
+    color:#f9600a;
+    opacity: 0.75;
+    line-height: 1.725;
+}
+.left-switch>a:hover{
+    color:#f9600a;
+    opacity: 1;
+}
+.active .left-switch>a{
+    color:#fff;
+}
+.icon-con{
+    width:100%;
+    display: none;
+    text-align: center;
+    position:absolute;
+    bottom:30px;
+}
+.icon-con>a>li{
+    color:#f9600a;
+    width:100%;
+    height:30px;
+    margin-bottom:34px;
+}
+.active .icon-con>a>li{
+    color:#fff;
+}
+.jia{
+    width:100%;
+    height:auto;
+    position:absolute;
+    bottom:0;
+    color:#f9600a;
+    text-align: center;
+    transition: all .5s;
+}
+.active .jia{
+    color:#fff;
+}
+.revolve{
+    transform: rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform:rotate(45deg) ;
+}
+/*左侧按钮-结束*/
+@media screen and (max-width:1336px){
+    .con-left{
+        width: 35px;
+        height: 100%;
+        float: left;
+        position:relative;
+        z-index: 999;
+        border:1px solid red;
+    }
+}
+/*
+@media screen and (max-width:1280px){}
+@media screen and (max-width:1336px){}*/

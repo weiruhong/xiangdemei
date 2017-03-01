@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/video.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="video-box">
+    <div class="video">
+        <div class="video-con" id="video-con">
+            <!--左侧-开始-->
+            <div class="con-left" >
+                <div class="left-btn" id="video-left-btn">
+                    <span class="btn-top"></span>
+                    <span class="btn-centre"></span>
+                    <span class="btn-bottom"></span>
+                </div>
+                <div class="left-switch" id="video-left-switch">
+                    <a href="#">中</a><br/><a href="#">EN</a>
+                </div>
+                <ul class="icon-con" id="video-icon-con">
+                    <a href="https://www.facebook.com/%E6%83%B3%E5%BE%97%E7%BE%8E-XIANGDEMEI-1630224173886024/"><li class="icon iconfont icon-facebookf"></li></a>
+
+                    <a href="https://www.instagram.com/xiangdemei_china/"><li class="icon iconfont icon-instagram"></li></a>
+
+                    <a href="https://www.pinterest.com/xiangdemei/"><li class="iaon iconfont icon-socialpinterestoutline">
+                    </li></a>
+
+                    <a href="http://i1.piimg.com/564462/d356db0672235a0e.png"><li class="icon iconfont icon-weixin"></li></a>
+
+                    <a href="http://www.weibo.com/u/5693230941?refer_flag=1005050010_&is_hot=1"><li  class="icon iconfont icon-weibo"></li></a>
+
+                    <a href="https://www.youtube.com/watch?v=NkvwvFR_Nu4"><li class="icon iconfont icon-youtube"></li></a>
+
+                    <a href="https://vimeo.com/xiangdemei"><li class="icon iconfont icon-v"></li></a>
+                </ul>
+                <div class="jia" id="video-jia"><div  class="icon iconfont icon-jia" ></div>
+                </div>
+            </div>
+            <!--左侧-结束-->
+            <!--右侧-开始-->
+            <div class="video-right">
+                <!--右侧-上-开始-->
+                <div class="video-right-top">
+                    <ul class="video-header">
+                        <li><a href="hhsj.html">我就喜欢花花世界</a></li>
+                        <li><a href="pt.html">拼贴装置</a></li>
+                        <li><a href="video.html">影像装置</a></li>
+                        <li  class="hot"><a href="jilupian.html">纪录片</a></li>
+                    </ul>
+                    <div class="video-img">
+                        <a href="index.html"><img src="img/video.png" alt=""></a>
+                    </div>
+                </div>
+                <!--右侧-上-结束-->
+            </div>
+            <!--右侧-结束-->
+            <div class="btn" id="btn"><img src="img/btn.png" alt=""></div>
+        </div>
+        <video src="video/video.mp4" id="myVideo"></video>
+        <div class="zhezhao">
+            <div class="zhezhao-con">
+                <div class="nav">
+                    <a href="index.html" class="hot">公司介绍</a>
+                    <a href="artist.html">艺术家介绍</a>
+                    <a href="xiangmu.html">项目</a>
+                    <a href="zhanlan.html">展览</a>
+                    <a href="jiangxiang.html">奖项</a>
+                    <a href="lianxi.html">联系方式</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    /*视频-暂停*/
+    var myVideo = document.getElementById("myVideo");
+    var videoCon = document.getElementById("video-con")
+    $(".btn").click(function(){
+        myVideo.style.display ="block";
+        myVideo.play();
+        $(this).css("display","none")
+        videoCon.style.display = 'none';
+    })
+    /*var myVideo = document.getElementById("myVideo");
+    $(".video").click(function(){
+        myVideo.pause();
+        $(".video-con").show();
+    })
+    $(".video").hover(function(){
+        myVideo.pause();
+        $(".video-con").show();
+    },function(){
+        myVideo.play();
+        $(".video-con").hide();
+    });*/
+
+    var myVideo = document.getElementById("myVideo");
+    var flag = true;
+    $("video").click(function(){
+        if(flag){
+            $("#video-con").show()
+            myVideo.pause()
+        } else {
+            $("#video-con").hide()
+            myVideo.play();
+        }
+        flag = !flag;
+    })
+
+</script>
+</html>
