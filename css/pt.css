@@ -58,9 +58,10 @@ body,html{
     color:#000;
 }
 .hhsj-header>li.hot{
+    opacity:1;
+}
+.hhsj-header>li:hover{
     opacity: 1;
-    font-family:FE1,sans-serif;
-
 }
 .hhsj-img{
     width:100px;
@@ -120,7 +121,7 @@ body,html{
     position:relative;
 }
 .demo{
-    width:50%;
+    width:49%;
     height:auto;
     overflow:hidden;
     float: left;
@@ -322,7 +323,7 @@ body,html{
     left:0;
     margin:0 auto;
 }
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1440px){
     /*花花世界-开始*/
     .hhsj-box{
         padding:40px;
@@ -378,11 +379,12 @@ body,html{
     }
     .pt-right .pt-xlbbh{
         width:100%;
-        margin:40px 0;
+        margin:43px 0;
     }
     .pt-right .pt-img{
         width:100%;
         height:125px;
+        margin-bottom:20px;
     }
     .pt-right .pt-img .pt-img1{
         width:160px;
@@ -444,7 +446,7 @@ body,html{
         margin-bottom:10px;
     }
     .ptzh-content-con{
-        width:920px;
+        width:1000px;
         height:100%;
         overflow-x: hidden;
         overflow-y: hidden;
@@ -456,7 +458,7 @@ body,html{
     }
     .ptzh-right{
         width:100%;
-        height:900px;
+        height:auto;
     }
     .ptzh-right>li.ptzh-hot{
         display: block;
@@ -470,7 +472,6 @@ body,html{
     }
     .ptzh-right li ul li{
         width:33.3%;
-        /*height:260px;*/
     }
     .ptzh-right li ul li img{
         width:100%;
@@ -483,7 +484,7 @@ body,html{
     }
     /*拼贴-结束*/
     #pt-yz{
-        margin-bottom:300px;
+        margin-bottom:320px;
     }
     #pt-img-top1>div{
         width:10px;
@@ -493,6 +494,24 @@ body,html{
     }
     .ptzh-con{
         margin-top:10px;
+    }
+}
+@media screen and (max-width: 1366px){
+    .ptzh-content-con{
+        width:920px;
+        height:100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    #pt-yz {
+        margin-bottom: 300px;
+    }
+    .pt-right .pt-xlbbh {
+        width: 100%;
+        margin: 38px 0;
+    }
+    .pt-right {
+        margin-left: 155px;
     }
 }
 @media screen and (max-width: 1024px){
@@ -524,8 +543,8 @@ body,html{
     .hhsj-right-bottom{
         width:100%;
         height:95%;
-        margin-top:0.2rem;
-        font-size:0.72rem;
+        margin-top:0.15rem;
+        font-size:0.6rem;
     }
     .hhsj-right{
         margin-left: 1rem;
@@ -696,7 +715,7 @@ body,html{
     .hhsj-jtxy{
         width:0.15rem;
         float: left;
-        margin-top:0.2rem;
+        margin-top:0.18rem;
     }
     .active.hhsj-jtxy{
         transform:rotate(180deg);

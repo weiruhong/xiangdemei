@@ -249,6 +249,10 @@
             $(".drop-down-content-con").toggle()
             $(".hhsj-jtxy").toggleClass("active")
         })
+        $(".drop-down-content-con>li").click(function(){
+            var index = $(this).index();
+            $(".drop-down-content-con>li").removeClass("hhsjdd-hot").eq(index).addClass("hhsjdd-hot")
+        })
         /*下拉菜单*/
         var ptcenter = document.getElementsByClassName("ptzh-content")[0];
         if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){

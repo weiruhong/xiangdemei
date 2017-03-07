@@ -80,10 +80,13 @@ video {
     opacity: 0.5;
     font-family:FE1,sans-serif;
 }
+.video-header>li.hot{
+    opacity: 1;
+}
 .video-header>li>a{
     color:#fff;
 }
-.video-header>li.hot{
+.video-header>li:hover{
     opacity: 1;
 }
 .video-img{
@@ -117,7 +120,7 @@ video {
 
 /*video-遮罩开始*/
 /*video-遮罩结束*/
-@media (min-width:1366px) and (max-width:1440px) {
+@media (max-width:1440px){
     #video-left-btn>span{
         border-top:5px solid #fff;
     }
@@ -139,7 +142,6 @@ video {
         float: right;
     }
 }
-
 @media screen and (max-width: 768px){
     #video-left-btn>span {
         border-top: 0.08rem solid #fff;

@@ -93,17 +93,19 @@
 			$('.left2').click(function(){
 				if(flag){
 					$(".left2").css('font-size','30px')
-					$("#left2 p").css("margin-top","-15px")
+					$("#left2 p").css("margin-top","-10px")
 				} else {
 					$(".left2").css('font-size','20px')
-					$("#left2 p").css("margin-top","-10px")
+					$("#left2 p").css("margin-top","-5px")
 				}
 				flag = !flag;
 			})
 		}
 	})
-	$(document).ready(function() {
-		$("#zsimg").delay(5000).fadeOut();
-	})
+	function codefans(){
+		var zsimg=document.getElementById("zsimg");
+		zsimg.style.display="none";
+	}
+	setTimeout("codefans()",5000);//2秒，可以改动
 </script>
 </html>

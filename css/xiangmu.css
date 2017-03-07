@@ -27,7 +27,8 @@ HTML {
     color:#8d0947;
     opacity: 0.5;
     font-size:90px;
-    height:180px;
+    height:auto;
+    margin-bottom:40px;
     margin-right: 100px;
 }
 .xm-list>li>a:hover{
@@ -78,8 +79,63 @@ HTML {
     width:45%;
     display: inline-block;
 }
+@media screen and (max-width:1440px){
+    /*联系-开始*/
+    .lx-center-top,.lx-center-bottom{
+        margin-top:-8px;
+        font-size: 31px;
+        line-height: 1.725;
+    }
+    .lx-center-top{
+        margin-bottom:155px;
+    }
+    .lx-loft{
+        width:45%;
+        display: inline-block;
+    }
+    .lx-e{
+        width:23%;
+        display: inline-block;
+    }
+    .lx-t,.lx-f{
+        width:38%;
+        display: inline-block;
+    }
+    /*    .lx-center-bottom{
+            font-size: 36px;
+        }*/
+    .center-con{
+        font-size:30px;
+    }
+    /*联系-结束*/
+    /*项目-开始*/
+    .xm-list:first-child{
+        margin-top:-20px;
+    }
+    .xm-list>li>a{
+        font-size:64px;
+        margin-right: 50px;
+        margin-bottom:20px;
+    }
+    #xm-left-btn>span{
+        border-top:5px solid #8d0947;
+    }
+    .active #xm-left-btn>span{
+        border-top:5px solid #fff;
+    }
+    /*项目-结束*/
+}
 @media screen and (max-width:1366px){
     /*联系-开始*/
+    .lx-center-top,.lx-center-bottom{
+        font-size: 30px;
+    }
+    .lx-center-top{
+        margin-bottom:150px;
+    }
+}
+/*@media screen and (max-width:1366px){
+    !*联系-开始*!
     .lx-center-top,.lx-center-bottom{
         margin-top:-8px;
         font-size: 30px;
@@ -100,21 +156,21 @@ HTML {
         width:38%;
         display: inline-block;
     }
-/*    .lx-center-bottom{
+!*    .lx-center-bottom{
         font-size: 36px;
-    }*/
+    }*!
     .center-con{
         font-size:30px;
     }
-    /*联系-结束*/
-    /*项目-开始*/
+    !*联系-结束*!
+    !*项目-开始*!
     .xm-list:first-child{
         margin-top:-20px;
     }
     .xm-list>li>a{
-        height:120px;
         font-size:64px;
         margin-right: 50px;
+        margin-bottom:20px;
     }
     #xm-left-btn>span{
         border-top:5px solid #8d0947;
@@ -122,8 +178,8 @@ HTML {
     .active #xm-left-btn>span{
         border-top:5px solid #fff;
     }
-    /*项目-结束*/
-}
+    !*项目-结束*!
+}*/
 @media screen and (max-width:1280px){
     /*联系-开始*/
     .lx-center-top,.lx-center-bottom{

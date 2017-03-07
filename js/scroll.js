@@ -4,6 +4,9 @@ $(function(){
     if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){
         center.style.cssText="width: calc(100% + 20px);";
     }
+    if(isIE=navigator.userAgent.indexOf("Firefox")>0){
+        center.style.cssText="width: calc(100% + 20px);";
+    }
     if(isSafari=navigator.userAgent.indexOf("Safari")>0) {
         center.style.cssText="width:100%;";
     }

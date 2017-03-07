@@ -5,24 +5,72 @@ body,p,ul,ol,dl,dt,dd,li,h1,h2,h3,h4,h5,h6,input,td,tr,th,table{
 }
 @font-face {
     font-family: 'FE1';
-    src: url('../font/NotoSansHans-Bold.otf') format('woff');
+    src: url('../font/NotoSansHans-Bold.eot') format('eot');/*IE9*/
+    src: url('../font/NotoSansHans-Bold.otf') format('otf');
+    src: url('../font/NotoSansHans-Bold.eot') format('embedded-opentype');/*IE6-IE8*/
+    src: url('../font/NotoSansHans-Bold.ttf') format('truetype');/*chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    src: url('../font/NotoSansHans-Bold.woff') format('woff');/*chrome, firefox*/
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
+    font-family: 'FE3';
+    src: url('../font/NotoSansHans-Black.eot') format('eot');/*IE9*/
+    src: url('../font/NotoSansHans-Black.otf') format('otf');
+    src: url('../font/NotoSansHans-Black.eot') format('embedded-opentype');/*IE6-IE8*/
+    src: url('../font/NotoSansHans-Black.ttf') format('truetype');/*chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    src: url('../font/NotoSansHans-Black.woff') format('woff');/*chrome, firefox*/
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FE5';
+    src: url('../font/NOTOSANSHANS-THIN_1.eot') format('eot');/*IE9*/
+    src: url('../font/NOTOSANSHANS-THIN_1.OTF') format('otf');
+    src: url('../font/NOTOSANSHANS-THIN_1.eot') format('embedded-opentype');/*IE6-IE8*/
+    src: url('../font/NOTOSANSHANS-THIN_1.ttf') format('truetype');/*chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    src: url('../font/NOTOSANSHANS-THIN_1.woff') format('woff');/*chrome, firefox*/
+    font-weight: normal;
+    font-style: normal;
+}
+/*@font-face {
+    font-family: 'FE1';
+    src: url('../font/NotoSansHans-Bold.eot'); !* IE9*!
+  !*  src: url('../fonts/NotoSansHans-Bold.woff') format('woff');*!
+    src: url('../font/NotoSansHans-Bold.otf') format('woff');
+    src: url('../font/NotoSansHans-Bold.eot') format('embedded-opentype'), !* IE6-IE8 *!
+    src: url('../font/NotoSansHans-Bold.ttf') format('truetype'); !* chrome, firefox, opera, Safari, Android, iOS 4.2+*!
+    font-weight: normal;
+    font-style: normal;
+}*/
+/*@font-face {
     font-family: 'FE2';
     src: url('../font/NotoSansHant-Light.otf') format('woff');
+    src: url('../font/NotoSansHant-Light.ttf') format('truetype'); !* chrome, firefox, opera, Safari, Android, iOS 4.2+*!
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'FE3';
     src: url('../font/NotoSansHans-Black.otf') format('woff');
+    src: url('../font/NotoSansHans-Black.ttf') format('truetype'); !* chrome, firefox, opera, Safari, Android, iOS 4.2+*!
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'FE4';
     src: url('../font/NotoSansHans-Medium.otf') format('woff');
+    src: url('../font/NotoSansHans-Medium.ttf') format('truetype'); !* chrome, firefox, opera, Safari, Android, iOS 4.2+*!
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'FE5';
     src: url('../font/NOTOSANSHANS-THIN_1.OTF') format('woff');
-}
+    src: url('../font/NOTOSANSHANS-THIN_1.ttf') format('truetype'); !* chrome, firefox, opera, Safari, Android, iOS 4.2+*!
+    font-weight: normal;
+    font-style: normal;
+}*/
 a:link{
     text-decoration:none;
 }
