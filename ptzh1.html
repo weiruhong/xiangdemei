@@ -68,7 +68,6 @@
             <!--右侧-上-结束-->
             <!--右侧-下-开始-->
             <div class="hhsj-right-bottom">
-                <div class="center-con" id="pt-center-con">
                     <div id="main">
                         <div class="demo">
                             <div class="my-gallery">
@@ -132,6 +131,7 @@
                         </div>
                         <!--pt-右侧-->
                         <div class="pt-right">
+                            <div class="center-con">
                             <div class="pt-yz" id="pt-yz">
                                 <p>原作</p>
                                 <p>作品名称：<span>我就喜欢花花世界—彩虹</span></p>
@@ -139,6 +139,7 @@
                                 <p>制作工艺：<span>纸质全球货币拼贴</span></p>
                                 <p>尺寸规格：<span>58.5X59.5cm</span></p>
                                 <p>带框尺寸：<span>65X66cm</span></p>
+
                             </div>
                             <div class="pt-img">
                                 <div class="pt-img1">
@@ -160,12 +161,11 @@
                                     </div>
                                 </div>
                             </div>
+                            </div>
                         </div>
                         <!--pt-右侧-->
 
                     </div>
-
-                </div>
                 <!--右侧-下-结束-->
             </div>
             <!--右侧-下-结束-->
@@ -394,39 +394,5 @@
     // execute above function
     initPhotoSwipeFromDOM('.my-gallery');
     /*点击放大-结束*/
-    /*轮播-开始*/
-    window.onload=function (){
-        var oDiv=document.getElementsByClassName('my-gallery')[0];
-        var oPrev=document.getElementById('prev');
-        var oNext=document.getElementById('next');
-        var aDiv=oDiv.getElementsByTagName('figure');
-        var now=0; // 当前的下标
-
-        // 下一张
-        oNext.onclick=next;
-
-        function next(e)
-        {
-            e.preventDefault()
-            e.stopPropagation()
-            now++;
-            if (now == aDiv.length)
-            {
-                now=0;
-            }
-            tab(now);
-        }
-
-        function tab(index)
-        {
-            for (var i=0; i<aDiv.length; i++)
-            {
-                aDiv[i].className='';
-            }
-            aDiv[index].className='active';
-        }
-    };
-    /*轮播-结束*/
-
 </script>
 </html>
