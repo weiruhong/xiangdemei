@@ -112,7 +112,7 @@ html,body{
 .left-switch>a{
     text-decoration: none;
     color:#f9600a;
-    opacity: 0.75;
+    opacity: 0.5;
     line-height: 1.725;
 }
 .left-switch>a:hover{
@@ -423,8 +423,10 @@ html,body{
     }
     /*左侧-开始*/
     .left-switch {
-        margin-top: 0.5rem;
+        margin-top: 0.7rem;
         font-size:0.4rem;
+        position: absolute;
+        top: 0.4rem;
     }
     .left-switch>a:first-child{
         font-size:0.45rem;
