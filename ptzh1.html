@@ -67,7 +67,7 @@
             </div>
             <!--右侧-上-结束-->
             <!--右侧-下-开始-->
-            <div class="hhsj-right-bottom">
+            <div class="hhsj-right-bottom" id="ptzh-bottom">
                     <div id="main">
                         <div class="demo">
                             <div class="my-gallery">
@@ -394,5 +394,16 @@
     // execute above function
     initPhotoSwipeFromDOM('.my-gallery');
     /*点击放大-结束*/
+    $(document).ready(function() {
+        $("#zyjt").delay(5000).fadeOut();
+
+    })
+$(function(){
+    var windowW = $(window).width();
+    var ptzhH = $("#ptzh-bottom").height()-$(".demo").outerHeight(true);
+    if(windowW < 768 || windowW == 768){
+          $(".pt-right").height(ptzhH)
+    }
+})
 </script>
 </html>

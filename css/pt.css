@@ -123,7 +123,7 @@ body,html{
     position:relative;
 }
 .demo{
-    width:48%;
+    width:43%;
     height:auto;
     overflow:hidden;
     float: left;
@@ -310,7 +310,7 @@ body,html{
 }
 /*下拉菜单-结束*/
 #pt-yz{
-    margin-bottom:385px;
+    margin-bottom:300px;
 }
 #pt-img-top1>div{
     width:10px;
@@ -584,10 +584,11 @@ body,html{
     .hhsj-right-top {
         width: 100%;
         height: auto;
+        overflow: hidden;
     }
     .hhsj-right-bottom{
         width:100%;
-        height:95%;
+        height:89%;
         margin-top:0.6rem;
         font-size:0.6rem;
     }
@@ -619,6 +620,7 @@ body,html{
         width:100%;
         height:auto;
         margin-left:0;
+        margin-bottom:0.6rem;
         position:relative;
     }
     .my-gallery img {
@@ -629,7 +631,6 @@ body,html{
     .pt-right{
         margin-left:0;
         width:100%;
-        height:46%;
     }
     .my-gallery div{
         width:100%;
@@ -792,14 +793,13 @@ body,html{
         font-size:0.3rem;
     }
     /*下拉菜单-结束*/
-
-    .my-gallery .pt-right .pt-img{
-        width:100%;
-        height:125px;
+    .pt-right .pt-img {
+        width: 100%;
+        height:1.7rem;
     }
     .pt-right .pt-img .pt-img1{
         width:2.2rem;
-        height:125px;
+        height:1.25rem;
         float: left;
     }
     .pt-right .pt-img .pt-img1:nth-child(1){
@@ -807,11 +807,11 @@ body,html{
     }
     .pt-right .pt-img .pt-img1 .pt-img-top{
         width:100%;
-        height:1.4rem;
+        height:1.25rem;
     }
     .pt-right .pt-img .pt-img1 .pt-img-top>div{
-        width:1.4rem;
-        height:1.4rem;
+        width:1.25rem;
+        height:1.25rem;
         margin-left:0;
         display: block;
         border:1px solid #000;
@@ -819,9 +819,9 @@ body,html{
     }
     .pt-img-top>p{
         width:0.6rem;
-        height:1.4rem;
+        height:1.25rem;
         text-align: center;
-        line-height: 1.5rem;
+        line-height: 1.25rem;
         font-size:0.1rem;
         margin-left:4px;
         float: left;
@@ -829,7 +829,7 @@ body,html{
         border-left:1px solid #000;
     }
     .pt-right .pt-img .pt-img1 .pt-img-bottom{
-        width:1.4rem;
+        width:1.25rem;
         height:20px;
         margin-top:4px;
         font-size:12px;
@@ -854,11 +854,11 @@ body,html{
         width:10px;
     }
     #pt-yz{
-        margin-bottom:50px;
+        margin-bottom:0.5rem;
     }
     #zyjt{
-        width:40px;
-        bottom:50px;
+        width:0.4rem;
+        bottom:0.5rem;
     }
 }
 

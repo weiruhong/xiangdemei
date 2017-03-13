@@ -67,7 +67,7 @@
             </div>
             <!--右侧-上-结束-->
             <!--右侧-下-开始-->
-            <div class="hhsj-right-bottom">
+            <div class="hhsj-right-bottom" id="ptzh-bottom">
                     <div id="main">
                         <div class="demo">
                             <div class="my-gallery">
@@ -400,43 +400,18 @@
 
     // execute above function
     initPhotoSwipeFromDOM('.my-gallery');
+
     /*点击放大-结束*/
-    /*轮播-开始*/
-    window.onload=function (){
-        var oDiv=document.getElementsByClassName('my-gallery')[0];
-        var oPrev=document.getElementById('prev');
-        var oNext=document.getElementById('next');
-        var aDiv=oDiv.getElementsByTagName('figure');
-        var now=0; // 当前的下标
-
-        // 下一张
-        oNext.onclick=next;
-
-        function next(e)
-        {
-            e.preventDefault()
-            e.stopPropagation()
-            now++;
-            if (now == aDiv.length)
-            {
-                now=0;
-            }
-            tab(now);
-        }
-
-        function tab(index)
-        {
-            for (var i=0; i<aDiv.length; i++)
-            {
-                aDiv[i].className='';
-            }
-            aDiv[index].className='active';
-        }
-    };
-    /*轮播-结束*/
     $(document).ready(function() {
         $("#zyjt").delay(5000).fadeOut();
 
+    })
+    $(function(){
+        var windowW = $(window).width();
+        var ptzhH = $("#ptzh-bottom").height()-$(".demo").outerHeight(true);
+        if(windowW < 768 || windowW == 768){
+            $(".pt-right").height(ptzhH)
+        }
     })
 </script>
 </html>

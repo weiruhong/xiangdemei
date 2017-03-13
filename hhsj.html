@@ -128,7 +128,7 @@
         /*字体大小*/
         var windowW = $(window).width();
         var flag = true;
-        if(windowW>768 || windowW==768){
+        if(windowW>768 ){
             $('.center-con').click(function(){
                 if(flag){
                     $(".center-con").css('font-size','40px')
@@ -142,11 +142,11 @@
         }else{
             $('.center-con').click(function(){
                 if(flag){
-                    $(".center-con").css('font-size','30px')
-                    $(".hhsj-right-bottom").css('margin-top','13px')
+                    $(".center-con").css('font-size','26px')
+                    $(".hhsj-right-bottom").css('margin-top','0.6rem')
                 } else {
                     $(".center-con").css('font-size','20px')
-                    $(".hhsj-right-bottom").css('margin-top','15px')
+                    $(".hhsj-right-bottom").css('margin-top','0.63rem')
                 }
                 flag = !flag;
             })
