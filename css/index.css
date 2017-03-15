@@ -13,13 +13,13 @@ HTML {
 }
 
 html,body{
-    background: #6a1a7e;
     width: 100%;
     height: 100%;
     overflow:hidden;
 }
-.content,.art-content{
+.content{
     padding:55px;
+    background: #6a1a7e;
     width: 100%;
     height: 100%;
 }
@@ -256,6 +256,9 @@ html,body{
 }
 /*艺术家-开始*/
 .art-content{
+    width:100%;
+    height:100%;
+    padding:55px;
     background: url(../img/art-bg.png) no-repeat top;
     background-size: cover;
 }
