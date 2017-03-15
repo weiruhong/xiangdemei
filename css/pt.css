@@ -44,6 +44,7 @@ body,html{
 }
 .hhsj-header{
     margin-top:-15px;
+    margin-top:0\0;
     float: left;
     height:100%;
 }
@@ -353,6 +354,7 @@ body,html{
     }
     .hhsj-header{
         margin-top:-10px;
+        margin-top:-0px\0;
     }
     .hhsj-img {
         width: 80px;
@@ -550,10 +552,10 @@ body,html{
 }
 @media screen and (max-width: 1024px){
     .ptzh-content-con{
-        width:600px;
+        width:580px;
     }
     .ptzh-right{
-        width:600px;
+        width:100%;
         float: left;
     }
     .my-gallery img {
@@ -723,6 +725,7 @@ body,html{
     .hhsj-jtxx{
         width:0.2rem;
         margin-top:0.25rem;
+        margin-top:0.15rem\0;
         float: left;
     }
     .active.hhsj-jtxx{
@@ -761,6 +764,7 @@ body,html{
         width:0.15rem;
         float: left;
         margin-top:0.18rem;
+        margin-top:0.1rem\0;
     }
     .active.hhsj-jtxy{
         transform:rotate(180deg);

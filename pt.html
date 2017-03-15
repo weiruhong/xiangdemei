@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/pt.css">
     <script src="js/jquery.js"></script>
     <script src="js/index.js"></script>
-
 </head>
 <body>
 <div class="hhsj-box">
@@ -254,13 +253,30 @@
             $(".drop-down-content-con>li").removeClass("hhsjdd-hot").eq(index).addClass("hhsjdd-hot")
         })
         /*下拉菜单*/
+        /*滚动条*/
         var ptcenter = document.getElementsByClassName("ptzh-content")[0];
-        if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){
+        var explorer = window.navigator.userAgent ;
+        //ie
+        if (explorer.indexOf("MSIE") >= 0) {
             ptcenter.style.cssText="width: calc(100% + 20px);";
         }
-        if(isSafari=navigator.userAgent.indexOf("Safari")>0) {
+//firefox
+        else if (explorer.indexOf("Firefox") >= 0) {
+            ptcenter.style.cssText="width: calc(100% + 20px);";
+        }
+//Chrome
+        else if(explorer.indexOf("Chrome") >= 0){
             ptcenter.style.cssText="width:100%;";
         }
+//Opera
+        else if(explorer.indexOf("Opera") >= 0){
+            ptcenter.style.cssText="width:100%;";
+        }
+//Safari
+        else if(explorer.indexOf("Safari") >= 0){
+            ptcenter.style.cssText="width:100%;";
+        }
+        /*滚动条*/
 
     })
 

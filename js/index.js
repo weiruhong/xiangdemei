@@ -32,6 +32,8 @@ $(function(){
         zList.removeClass("zl-list-hot").eq(index).addClass("zl-list-hot");
     })
     /*展览*/
+
+
 })
 /*小于768时使用rem*/
 new function (){

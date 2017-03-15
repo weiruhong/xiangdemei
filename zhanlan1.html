@@ -514,17 +514,7 @@
             var imgarr=['url(./img/ydd1.png)','url(./img/ydd5.png)','url(./img/ydd6.png)','url(./img/ydd1.png)','url(./img/ydd4.png)','url(./img/ydd7.png)'];
             $('.itembox').css({'height':h,'background':imgarr[num-1],'background-size':'cover'})
         }
-        /*滚动条*/
-        var oDiv =  document.getElementsByClassName("center-con");
-        for(var i=0;i<oDiv.length;i++){
-            if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){
-                oDiv[i].style.cssText="width: calc(100% + 20px);";
-            }
-            if(isSafari=navigator.userAgent.indexOf("Safari")>0) {
-                oDiv[i].style.cssText="width:100%;";
-            }
-        }
-        /*滚动条*/
+
     })
 </script>
 </html>
