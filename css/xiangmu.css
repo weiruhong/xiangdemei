@@ -9,10 +9,13 @@ HTML {
     scrollbar-shadow-color: #fff;
     scrollbar-dark-shadow-color:#fff;
 }
-#xm-content{
+.xm-content{
+    width:100%;
+    height:100%;
+    padding:55px;
     background: #fff;
 }
-#xm-content .zhong{
+.xm-content .zhong{
     margin-right:0;
 }
 .xm-list{
@@ -56,7 +59,10 @@ HTML {
 }
 /*项目结束*/
 /*联系开始*/
-#lx-content{
+.lx-content{
+    width:100%;
+    height:100%;
+    padding:55px;
     background: #8d0947;
 }
 .lx-center-top,.lx-center-bottom{
@@ -82,6 +88,9 @@ HTML {
 }
 @media screen and (max-width:1440px){
     /*联系-开始*/
+    .lx-content{
+        padding:40px;
+    }
     .lx-center-top,.lx-center-bottom{
         margin-top:-8px;
         margin-top:0\0;
@@ -107,6 +116,9 @@ HTML {
     }
     /*联系-结束*/
     /*项目-开始*/
+    .xm-content{
+        padding:40px;
+    }
     .xm-list:first-child{
         margin-top:-20px;
         margin-top:-0px\0;
@@ -178,6 +190,9 @@ HTML {
         width:100%;
     }
     /*联系-结束*/
+    .xm-content,.lx-content{
+        padding:0.33rem;
+    }
     #xm-left-btn>span{
         border-top:0.08rem solid #8d0947;
     }

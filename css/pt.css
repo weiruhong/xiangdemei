@@ -76,7 +76,7 @@ body,html{
 /*右侧-上-结束*/
 /*右侧-下-开始*/
 .hhsj-right-bottom{
-    height:84%;
+    height:90%;
     font-size:90px;
     line-height:1.725;
     margin-top:45px;
@@ -164,7 +164,7 @@ body,html{
     font-size:24px;
 }
  .pt-right .pt-yz p span{
-    font-family: FE5, sans-serif;
+    font-family: FE4, sans-serif;
 }
 .pt-right .pt-xlbbh{
     width:100%;
@@ -385,9 +385,6 @@ body,html{
     .pt-right .pt-yz p{
         font-size:17px;
     }
-    .pt-right .pt-yz p span{
-        font-family: FE4, sans-serif;
-    }
     .pt-right .pt-xlbbh{
         width:100%;
         margin:43px 0;
@@ -437,7 +434,7 @@ body,html{
     }
     /*拼贴-开始*/
     .hhsj-right-bottom{
-        height:90%;
+        height:92%;
     }
     .ptzh-con{
         width:100%;
@@ -521,7 +518,7 @@ body,html{
         width:500px;
     }
     .hhsj-right-bottom {
-        height:85%;
+        height:90%;
     }
     #pt-yz {
         margin-bottom: 200px;
