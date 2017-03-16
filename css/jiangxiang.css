@@ -185,7 +185,7 @@ HTML {
     font-family: FE3, sans-serif;
 }
 .jx-content,.jx-content a{
-    color:#e8a215;
+    color:#f2a701;
 }
 .zl-con p{
     font-size:39px;
@@ -220,9 +220,12 @@ HTML {
     font-family: FE1, sans-serif;
 }
 .zlsj>span,.zldd>span,.zlgg>span{
+    width:100%;
+    display: block;
     font-family: FE5, sans-serif;
 }
 .zlgg>a>span{
+    display: block;
     color:#642077;
     font-family: FE5, sans-serif;
 }
